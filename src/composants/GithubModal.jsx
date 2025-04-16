@@ -3,7 +3,7 @@ import "../style/GithubModal.css";
 
 const GithubModal = ({ show, onClose }) => {
   const [user, setUser] = useState(null);
-  const username = "octocat"; // Remplace par ton pseudo GitHub si besoin
+  const username = "John-doe"; // Remplace par ton pseudo GitHub si besoin
 
   useEffect(() => {
     if (show) {
