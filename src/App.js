@@ -11,26 +11,59 @@ class App extends React.Component {
   render() {
     return (
       <body>
-        <nav className="navbar">
-          <div className="navbar-logo">JOHN DOE</div>
-          <ul className="navbar-menu">
-            <li>
-              <a href="/home">HOME</a>
-            </li>
-            <li>
-              <a href="/services">SERVICES</a>
-            </li>
-            <li>
-              <a href="/portfolio">PORTFOLIO</a>
-            </li>
-            <li>
-              <a href="/contact">CONTACT</a>
-            </li>
-            <li>
-              <a href="/legal">MENTIONS LÉGALES</a>
-            </li>
-          </ul>
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        >
+          <div id="navbar-logo" class="container-fluid">
+            <span class="navbar-brand">JOHN DOE</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+          >
+            <ul class="navbar-nav">
+              <li lass="nav-item">
+                <a href="/home" class="navbar-brand">
+                  HOME
+                </a>
+              </li>
+              <li lass="nav-item">
+                <a href="/services" class="nav-link active">
+                  SERVICES
+                </a>
+              </li>
+              <li lass="nav-item">
+                <a href="/portfolio" class="nav-link active">
+                  PORTFOLIO
+                </a>
+              </li>
+              <li lass="nav-item">
+                <a href="/contact" class="nav-link active">
+                  CONTACT
+                </a>
+              </li>
+              <li lass="nav-item" id="mentions">
+                <a href="/legal" class="nav-link active">
+                  MENTIONS LÉGALES
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
+
         <Routes>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>

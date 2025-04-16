@@ -1,4 +1,8 @@
-.navbar {
+nav{
+  background-color: #1a1a1a;
+}
+
+#navbar {
     background-color: #1a1a1a;
     padding: 10px 20px;
     color: white;
@@ -7,19 +11,31 @@
     align-items: center;
   }
   
-  .navbar-logo {
+  #navbar-logo {
     font-weight: bold;
+    width: 50%;
+    position: relative;
+    left: 1px;
   }
   
-  .navbar-menu {
+  #navbar-menu {
     list-style: none;
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0;
   }
+
+  #mentions{
+    width: 200px;
+  }
+
+  #navbar-menu li{
+    position: relative;
+    right: 1px;
+  }
   
-  .navbar-menu li a {
+  #navbar-menu li a {
     color: white;
     text-decoration: none;
   }
