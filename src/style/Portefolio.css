@@ -1,0 +1,49 @@
+.portfolio-page {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .portfolio-banner img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .portfolio-underline {
+    width: 200px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px auto;
+    border: none;
+  }
+  
+  .project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .container{
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer div {
+    min-width: 200px;
+  }
