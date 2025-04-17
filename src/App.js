@@ -14,6 +14,7 @@ class App extends React.Component {
         <nav
           id="navbar"
           class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+          data-bs-theme="dark"
         >
           <div id="navbar-logo" class="container-fluid">
             <span class="navbar-brand">JOHN DOE</span>

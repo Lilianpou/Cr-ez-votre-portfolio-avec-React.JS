@@ -22,10 +22,10 @@ const Home = () => {
       <GithubModal show={showModal} onClose={() => setShowModal(false)} />
 
       {/* ABOUT & SKILLS */}
-      <section className="about-section">
-        <div className="about-container">
+      <section className="about-section" class="container">
+        <div className="about-container" class="row">
           {/* À PROPOS */}
-          <div className="about">
+          <div className="about" class="col-12, col-lg-6">
             <h3>A propos</h3>
             <img src={require("../img/john-doe-about.jpg")} alt="profil" className="about-img" />
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectuctus reiciendis impedit aut iure enim pleceat? Natus, neque at</p>
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
 
           {/* COMPÉTENCES */}
-          <div className="skills">
+          <div className="skills" class="col-12, col-lg-6">
             <h3>Mes compétences</h3>
             {[
               { name: 'HTML5', value: 90, color: 'crimson' },

@@ -32,7 +32,7 @@
     padding: 10px 20px;
   }
   
-  .about-section {
+  .container {
     background-color: #f9f9f9;
     padding: 50px 20px;
     display: flex;
@@ -50,7 +50,7 @@
   }
   
   .about, .skills {
-    flex: 1;
+    flex: 60%;
   }
   
   .about-img {

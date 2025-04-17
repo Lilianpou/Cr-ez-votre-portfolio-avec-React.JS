@@ -1,47 +1,53 @@
 import React from "react";
 import "../style/Portefolio.css";
+import freshFood from '../img/portfolio/fresh-food.jpg';
+import sushi from '../img/portfolio/restaurant-japonais.jpg';
+import spa from '../img/portfolio/espace-bien-etre.jpg';
+import seo from '../img/portfolio/seo.jpg';
+import api from '../img/portfolio/coder.jpg';
+import mockup from '../img/portfolio/screens.jpg';
 
 const projects = [
   {
     title: "Fresh Food",
     description: "Site de vente de produits frais en ligne",
     tech: "PHP et MySQL",
-    image: "../img/portfolio/fresh.jpg",
+    image: freshFood,
     link: "#",
   },
   {
     title: "Restaurant Akira",
     description: "Site de vente de produits frais en ligne",
     tech: "WordPress",
-    image: "../img/portfolio/sushi.jpg",
+    image: sushi,
     link: "#",
   },
   {
     title: "Espace bien-être",
     description: "Site de vente de produits frais en ligne",
     tech: "LARAVEL",
-    image: "../img/portfolio/spa.jpg",
+    image: spa,
     link: "#",
   },
   {
     title: "SEO",
     description: "Amélioration du référencement d’un site e-commerce",
     tech: "Outils SEO",
-    image: "../img/portfolio/seo.jpg",
+    image: seo,
     link: "#",
   },
   {
     title: "Création d'une API",
     description: "Création d’une API RESTFUL publique",
     tech: "PHP - SYMFONY",
-    image: "../img/portfolio/api.jpg",
+    image: api,
     link: "#",
   },
   {
     title: "Maquette d'un site web",
     description: "Création d’un prototype de site web",
     tech: "FIGMA",
-    image: "../img/portfolio/mockup.jpg",
+    image: mockup,
     link: "#",
   },
 ];
@@ -65,7 +71,7 @@ const Portfolio = () => {
             <div className="col-md-4 col-sm-11" key={index}>
               <div className="card project-card h-100">
                 <img
-                  src={require(project.image)}
+                  src={project.image}
                   className="card-img-top project-img"
                   alt={project.title}
                 />
