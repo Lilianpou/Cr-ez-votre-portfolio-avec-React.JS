@@ -1,0 +1,70 @@
+.legal-page {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+  }
+  
+  .legal-header {
+    text-align: center;
+  }
+  
+  .legal-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .underline {
+    width: 200px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 15px auto;
+    border: none;
+  }
+  
+  .accordion-container {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .accordion {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion summary {
+    background-color: #eaf1ff;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  .accordion-content {
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .accordion a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer div {
+    min-width: 200px;
+  }
